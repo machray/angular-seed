@@ -1,0 +1,28 @@
+<div ng-repeat="merchant in merchants">
+	<table>
+		<tr>
+			<td>{{merchant.merchantLocationId}}</td>
+		</tr>
+		<tr>
+			<td>{{merchant.locationName}}</td>
+		</tr>
+		<tr>
+			<td>{{merchant.addressStreet}}</td>
+		</tr>
+		<tr>
+			<td>{{merchant.addressCity}}, {{merchant.addressState}} {{merchant.addressZip}}</td>
+		</tr>
+		<tr>
+			<td>{{merchant.phone}}</td>
+		</tr>
+		<tr>
+			<td>{{merchant.hours}}</td>
+		</tr>
+		<tr>
+			<td>{{merchant.lattitude}}, {{merchant.longitude}}</td>
+		</tr>
+		<tr>
+			<td ng-repeat="link in merchant.links">{{link.href}}<br/><br/></td>
+		</tr>
+	</table>
+</div>
